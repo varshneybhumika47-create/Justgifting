@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary-fixed-dim": "#ccbdff",
+          "surface-tint": "#6543cf",
+          "surface-dim": "#dcd8e6",
+          "surface-container-highest": "#e5e0ef",
+          "surface-container-lowest": "#ffffff",
+          "on-secondary-fixed": "#2e1507",
+          "secondary": "#7a5644",
+          "primary-fixed": "#e7deff",
+          "on-primary-fixed-variant": "#4d25b6",
+          "tertiary-fixed": "#ffdbd0",
+          "on-tertiary-container": "#fffbff",
+          "error-container": "#ffdad6",
+          "outline-variant": "#cac4d6",
+          "primary": "#6341cc",
+          "surface-variant": "#e5e0ef",
+          "on-secondary-container": "#795543",
+          "on-surface": "#1c1a25",
+          "primary-container": "#7c5ce7",
+          "on-primary-fixed": "#1f0060",
+          "inverse-primary": "#ccbdff",
+          "secondary-fixed": "#ffdbcb",
+          "inverse-on-surface": "#f3eefd",
+          "on-secondary-fixed-variant": "#603f2e",
+          "outline": "#797585",
+          "on-primary-container": "#fffcff",
+          "on-tertiary": "#ffffff",
+          "on-primary": "#ffffff",
+          "on-background": "#1c1a25",
+          "surface-container": "#f0ecfa",
+          "on-error-container": "#93000a",
+          "tertiary-fixed-dim": "#ffb59e",
+          "secondary-fixed-dim": "#ebbda6",
+          "tertiary-container": "#a8624c",
+          "error": "#ba1a1a",
+          "surface-container-low": "#f6f1ff",
+          "tertiary": "#8a4a36",
+          "secondary-container": "#fdcdb6",
+          "background": "#fcf8ff",
+          "on-secondary": "#ffffff",
+          "surface-bright": "#fcf8ff",
+          "surface": "#fcf8ff",
+          "surface-container-high": "#ebe6f5",
+          "on-surface-variant": "#484554",
+          "on-tertiary-fixed": "#390c01",
+          "on-error": "#ffffff",
+          "inverse-surface": "#312f3a",
+          "on-tertiary-fixed-variant": "#713623"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xl": "2.5rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem",
+          "space-xs": "0.25rem",
+          "gutter": "1.5rem",
+          "margin": "2rem"
+        },
+        "fontFamily": {
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "label-sm": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "500"
+            }
+          ],
+          "label-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "500"
+            }
+          ]
+        }
+      },
+    },
+  }
+</script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-[#F5F0FF] font-body text-on-surface"><header class="fixed top-0 w-full z-50 bg-[#F5F0FF]/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="JustGifting Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASW2EylujlrX7m0yXH61wmEL5eaREgMscJE9-MEcG-tzVVmLR4D8XiZjZbfpC6hx0X0tXnCIiCicZg-WWF-u2y2n8ZUhoKxi9e1f0fEV_3H3bOh6wvCkbcgFrugZ9fbMIEyoIOEmuZIpcg6kEtJyBJYrJQrM1DpxG3DYTPhYxVDAttvJAgQchdrLyOdAnPp-I3eZSuLcYl-XIaI9D4mZhdsxxCChSjEr6bevNubjAUCMWRZgwfjJev"/><span class="text-headline-sm text-on-surface tracking-tight">JustGifting</span></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg px-3 py-2"><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="create-page" href="#">Create Page</a><a aria-current="page" class="transition-colors bg-primary-container text-on-primary-container font-bold rounded-lg px-3 py-2" data-path="recipient-profile" href="#">Recipient Profile</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="gift-recommendations" href="#">Gift Recommendations</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contributions-dashboard" href="#">Contributions Dashboard</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="public-gifting-page" href="#">Public Gifting Page</a></nav><div class="flex items-center gap-space-md"><span class="inline-flex items-center px-2.5 py-1 rounded-full text-label-sm font-medium bg-surface-container-high text-on-surface-variant">Draft</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-[#F5F0FF] min-h-screen"><div class="flex flex-col w-full max-w-5xl mx-auto px-gutter py-space-xl">
+<!-- Header / Step Indicator Section -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-primary-fixed text-on-primary-fixed-variant">
+          Step 1 of 3
+        </span>
+<span class="text-body-sm text-outline">About Them • Gifts • Review</span>
+</div>
+<h1 class="text-headline-lg text-on-surface tracking-tight">Tell us a little about someone special.</h1>
+<p class="text-body-lg text-on-surface-variant mt-space-xs">We'll help you discover thoughtful gifts that fit their world.</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2.5 rounded-xl bg-surface-container-high text-on-surface text-label-md font-medium hover:bg-surface-container-highest transition-colors flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+        Save Draft
+      </button>
+</div>
+</div>
+<!-- Form Container -->
+<form class="bg-white rounded-2xl shadow-xl shadow-primary/5 p-space-xl grid grid-cols-1 md:grid-cols-2 gap-space-lg mb-space-xl relative overflow-hidden" id="recipientForm">
+<!-- Decorative background splash -->
+<div class="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-primary-fixed/30 blur-3xl pointer-events-none"></div>
+<!-- Recipient Display Name -->
+<div class="flex flex-col gap-space-xs">
+<label class="text-label-md font-semibold text-on-surface flex items-center justify-between">
+<span>Recipient Name or Nickname <span class="text-error">*</span></span>
+<span class="text-body-sm text-outline font-normal">Publicly visible</span>
+</label>
+<input class="w-full bg-surface-container-low px-space-md py-3 rounded-xl border-0 text-body-md text-on-surface focus:ring-2 focus:ring-primary focus:bg-white transition-all outline-none" placeholder="e.g., Priya Sharma or 'Aunt Maya'" required="" type="text"/>
+</div>
+<!-- Age Range -->
+<div class="flex flex-col gap-space-xs">
+<label class="text-label-md font-semibold text-on-surface">Age Range</label>
+<select class="w-full bg-surface-container-low px-space-md py-3 rounded-xl border-0 text-body-md text-on-surface focus:ring-2 focus:ring-primary focus:bg-white transition-all outline-none cursor-pointer">
+<option disabled="" selected="" value="">Select age bracket</option>
+<option value="18-24">18 - 24 years</option>
+<option value="25-34">25 - 34 years</option>
+<option value="35-44">35 - 44 years</option>
+<option value="45-54">45 - 54 years</option>
+<option value="55+">55+ years</option>
+</select>
+</div>
+<!-- Occasion Dropdown -->
+<div class="flex flex-col gap-space-xs">
+<label class="text-label-md font-semibold text-on-surface">Occasion <span class="text-error">*</span></label>
+<select class="w-full bg-surface-container-low px-space-md py-3 rounded-xl border-0 text-body-md text-on-surface focus:ring-2 focus:ring-primary focus:bg-white transition-all outline-none cursor-pointer" required="">
+<option disabled="" selected="" value="">Choose celebration type</option>
+<option value="Birthday">Birthday</option>
+<option value="Anniversary">Anniversary</option>
+<option value="Wedding">Wedding</option>
+<option value="Graduation">Graduation</option>
+<option value="Festival">Festival (Diwali, Eid, etc.)</option>
+<option value="Celebration">General Celebration</option>
+</select>
+</div>
+<!-- Optional Event Date Picker -->
+<div class="flex flex-col gap-space-xs">
+<label class="text-label-md font-semibold text-on-surface">Event Date <span class="text-outline font-normal">(Optional)</span></label>
+<div class="relative">
+<input class="w-full bg-surface-container-low px-space-md py-3 rounded-xl border-0 text-body-md text-on-surface focus:ring-2 focus:ring-primary focus:bg-white transition-all outline-none" type="date"/>
+</div>
+</div>
+<!-- Selectable Interest Chips -->
+<div class="col-span-1 md:col-span-2 flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<label class="text-label-md font-semibold text-on-surface">Interests &amp; Hobbies</label>
+<span class="text-body-sm text-outline">Select all that apply or add your own</span>
+</div>
+<div class="flex flex-wrap gap-2.5" id="interestChips">
+<button class="px-4 py-2 rounded-full text-label-md bg-surface-container-high text-on-surface-variant transition-all hover:bg-primary-fixed hover:text-on-primary-fixed flex items-center gap-1.5" onclick="toggleInterest(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">coffee</span> Coffee
+        </button>
+<button class="px-4 py-2 rounded-full text-label-md bg-surface-container-high text-on-surface-variant transition-all hover:bg-primary-fixed hover:text-on-primary-fixed flex items-center gap-1.5" onclick="toggleInterest(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">menu_book</span> Reading
+        </button>
+<button class="px-4 py-2 rounded-full text-label-md bg-surface-container-high text-on-surface-variant transition-all hover:bg-primary-fixed hover:text-on-primary-fixed flex items-center gap-1.5" onclick="toggleInterest(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">palette</span> Art
+        </button>
+<button class="px-4 py-2 rounded-full text-label-md bg-surface-container-high text-on-surface-variant transition-all hover:bg-primary-fixed hover:text-on-primary-fixed flex items-center gap-1.5" onclick="toggleInterest(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">flight</span> Travel
+        </button>
+<button class="px-4 py-2 rounded-full text-label-md bg-surface-container-high text-on-surface-variant transition-all hover:bg-primary-fixed hover:text-on-primary-fixed flex items-center gap-1.5" onclick="toggleInterest(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">restaurant</span> Cooking
+        </button>
+<button class="px-4 py-2 rounded-full text-label-md bg-surface-container-high text-on-surface-variant transition-all hover:bg-primary-fixed hover:text-on-primary-fixed flex items-center gap-1.5" onclick="toggleInterest(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">architecture</span> Design
+        </button>
+</div>
+<!-- Custom Interest Input -->
+<div class="flex items-center gap-space-sm mt-2">
+<input class="flex-1 bg-surface-container-low px-space-md py-2.5 rounded-xl border-0 text-body-md text-on-surface focus:ring-2 focus:ring-primary focus:bg-white transition-all outline-none" id="customInterestInput" placeholder="Add custom interest (e.g., Vinyl records, Yoga)..." type="text"/>
+<button class="px-space-md py-2.5 rounded-xl bg-surface-container-high text-on-surface text-label-md font-medium hover:bg-primary hover:text-on-primary transition-colors" onclick="addCustomInterest()" type="button">Add</button>
+</div>
+</div>
+<!-- Needs or Practical Priorities -->
+<div class="flex flex-col gap-space-xs">
+<label class="text-label-md font-semibold text-on-surface">Needs or Practical Priorities</label>
+<input class="w-full bg-surface-container-low px-space-md py-3 rounded-xl border-0 text-body-md text-on-surface focus:ring-2 focus:ring-primary focus:bg-white transition-all outline-none" placeholder="e.g., Moving to a new apartment, upgrading tech setup" type="text"/>
+</div>
+<!-- Optional Budget Range (INR Selector) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="text-label-md font-semibold text-on-surface">Target Budget Range (INR)</label>
+<span class="text-label-md font-bold text-primary" id="budgetLabel">₹5,000 - ₹15,000</span>
+</div>
+<input class="w-full accent-primary cursor-pointer py-3 bg-transparent" max="50000" min="1000" oninput="updateBudget(this.value)" step="1000" type="range" value="15000"/>
+<div class="flex justify-between text-body-sm text-outline">
+<span>₹1,000</span>
+<span>₹25,000</span>
+<span>₹50,000+</span>
+</div>
+</div>
+<!-- Short Description about the recipient -->
+<div class="col-span-1 md:col-span-2 flex flex-col gap-space-xs">
+<label class="text-label-md font-semibold text-on-surface">Short Description</label>
+<textarea class="w-full bg-surface-container-low px-space-md py-3 rounded-xl border-0 text-body-md text-on-surface focus:ring-2 focus:ring-primary focus:bg-white transition-all outline-none resize-none" placeholder="Share a few sentences about their personality, current projects, or what would make them smile..." rows="3"></textarea>
+</div>
+<!-- Privacy Reminder Notice inside card -->
+<div class="col-span-1 md:col-span-2 bg-surface-container-low p-space-md rounded-xl flex items-start gap-space-md">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">lock_person</span>
+<div class="flex flex-col">
+<span class="text-label-md font-semibold text-on-surface">Privacy Reminder</span>
+<p class="text-body-sm text-on-surface-variant">Use a nickname if preferred and avoid sharing sensitive personal details publicly on the gifting page.</p>
+</div>
+</div>
+</form>
+<!-- Action Navigation Footer -->
+<div class="flex items-center justify-between pb-space-xl">
+<button class="px-space-lg py-3 rounded-xl bg-surface-container-high text-on-surface text-label-md font-medium hover:bg-surface-container-highest transition-colors flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+      Back
+    </button>
+<button class="px-space-xl py-3 rounded-xl bg-primary text-on-primary text-label-md font-semibold shadow-lg shadow-primary/20 hover:bg-primary-container transition-all flex items-center gap-space-xs transform hover:scale-[1.02]" onclick="submitProfile()" type="button">
+      Find Their Perfect Gifts
+      <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<script>
+  function toggleInterest(btn) {
+    const isSelected = btn.classList.contains('bg-primary');
+    if (isSelected) {
+      btn.classList.remove('bg-primary', 'text-on-primary', 'font-semibold');
+      btn.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+    } else {
+      btn.classList.add('bg-primary', 'text-on-primary', 'font-semibold');
+      btn.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+    }
+  }
+
+  function addCustomInterest() {
+    const input = document.getElementById('customInterestInput');
+    const val = input.value.trim();
+    if (!val) return;
+    
+    const container = document.getElementById('interestChips');
+    const newBtn = document.createElement('button');
+    newBtn.type = 'button';
+    newBtn.className = 'px-4 py-2 rounded-full text-label-md bg-primary text-on-primary font-semibold transition-all flex items-center gap-1.5 animate-pulse';
+    newBtn.innerHTML = `<span class="material-symbols-outlined text-[16px]">favorite</span> ${val}`;
+    newBtn.onclick = function() { toggleInterest(this); };
+    
+    container.appendChild(newBtn);
+    input.value = '';
+    setTimeout(() => newBtn.classList.remove('animate-pulse'), 1000);
+  }
+
+  function updateBudget(val) {
+    const formatted = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format(val);
+    document.getElementById('budgetLabel').innerText = `Up to ${formatted}`;
+  }
+
+  function submitProfile() {
+    const form = document.getElementById('recipientForm');
+    if (form.checkValidity()) {
+      alert('Recipient profile saved successfully! Navigating to Gift Recommendations...');
+    } else {
+      form.reportValidity();
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-low py-space-xl"><div class="max-w-7xl mx-auto px-gutter text-center text-on-surface-variant text-body-sm">© 2024 JustGifting. All rights reserved.</div></footer></body></html>
