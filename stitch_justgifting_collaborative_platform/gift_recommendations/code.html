@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary-fixed-dim": "#ccbdff",
+          "surface-tint": "#6543cf",
+          "surface-dim": "#dcd8e6",
+          "surface-container-highest": "#e5e0ef",
+          "surface-container-lowest": "#ffffff",
+          "on-secondary-fixed": "#2e1507",
+          "secondary": "#7a5644",
+          "primary-fixed": "#e7deff",
+          "on-primary-fixed-variant": "#4d25b6",
+          "tertiary-fixed": "#ffdbd0",
+          "on-tertiary-container": "#fffbff",
+          "error-container": "#ffdad6",
+          "outline-variant": "#cac4d6",
+          "primary": "#6341cc",
+          "surface-variant": "#e5e0ef",
+          "on-secondary-container": "#795543",
+          "on-surface": "#1c1a25",
+          "primary-container": "#7c5ce7",
+          "on-primary-fixed": "#1f0060",
+          "inverse-primary": "#ccbdff",
+          "secondary-fixed": "#ffdbcb",
+          "inverse-on-surface": "#f3eefd",
+          "on-secondary-fixed-variant": "#603f2e",
+          "outline": "#797585",
+          "on-primary-container": "#fffcff",
+          "on-tertiary": "#ffffff",
+          "on-primary": "#ffffff",
+          "on-background": "#1c1a25",
+          "surface-container": "#f0ecfa",
+          "on-error-container": "#93000a",
+          "tertiary-fixed-dim": "#ffb59e",
+          "secondary-fixed-dim": "#ebbda6",
+          "tertiary-container": "#a8624c",
+          "error": "#ba1a1a",
+          "surface-container-low": "#f6f1ff",
+          "tertiary": "#8a4a36",
+          "secondary-container": "#fdcdb6",
+          "background": "#fcf8ff",
+          "on-secondary": "#ffffff",
+          "surface-bright": "#fcf8ff",
+          "surface": "#fcf8ff",
+          "surface-container-high": "#ebe6f5",
+          "on-surface-variant": "#484554",
+          "on-tertiary-fixed": "#390c01",
+          "on-error": "#ffffff",
+          "inverse-surface": "#312f3a",
+          "on-tertiary-fixed-variant": "#713623"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xl": "2.5rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem",
+          "space-xs": "0.25rem",
+          "gutter": "1.5rem",
+          "margin": "2rem"
+        },
+        "fontFamily": {
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "label-sm": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "500"
+            }
+          ],
+          "label-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "500"
+            }
+          ]
+        }
+      },
+    },
+  }
+</script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-[#F5F0FF] font-body text-on-surface"><header class="fixed top-0 w-full z-50 bg-[#F5F0FF]/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="JustGifting Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASW2EylujlrX7m0yXH61wmEL5eaREgMscJE9-MEcG-tzVVmLR4D8XiZjZbfpC6hx0X0tXnCIiCicZg-WWF-u2y2n8ZUhoKxi9e1f0fEV_3H3bOh6wvCkbcgFrugZ9fbMIEyoIOEmuZIpcg6kEtJyBJYrJQrM1DpxG3DYTPhYxVDAttvJAgQchdrLyOdAnPp-I3eZSuLcYl-XIaI9D4mZhdsxxCChSjEr6bevNubjAUCMWRZgwfjJev"/><span class="text-headline-sm text-on-surface tracking-tight">JustGifting</span></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg px-3 py-2"><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="create-page" href="#">Create Page</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="recipient-profile" href="#">Recipient Profile</a><a aria-current="page" class="transition-colors bg-primary-container text-on-primary-container font-bold rounded-lg px-3 py-2" data-path="gift-recommendations" href="#">Gift Recommendations</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contributions-dashboard" href="#">Contributions Dashboard</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="public-gifting-page" href="#">Public Gifting Page</a></nav><div class="flex items-center gap-space-md"><span class="inline-flex items-center px-2.5 py-1 rounded-full text-label-sm font-medium bg-surface-container-high text-on-surface-variant">Draft</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-[#F5F0FF] min-h-screen"><div class="flex flex-col w-full">
+<div class="max-w-7xl mx-auto px-gutter py-space-xl w-full">
+<!-- Header Section -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed text-label-sm font-medium mb-space-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+          AI Curated Curation
+        </div>
+<h1 class="font-headline-lg text-on-surface tracking-tight">Thoughtful gifts, picked for them.</h1>
+</div>
+<div class="flex items-center gap-space-md">
+<button class="inline-flex items-center gap-space-xs px-5 py-3 rounded-full bg-secondary-container text-on-secondary-container hover:opacity-90 transition-all font-label-md shadow-sm" onclick="openLocalGiftModal()">
+<span class="material-symbols-outlined text-[20px]">add</span>
+          + Add a Local Gift
+        </button>
+</div>
+</div>
+<!-- Recipient Summary Bar -->
+<div class="bg-surface-container-low rounded-2xl p-space-lg mb-space-xl shadow-[0_1px_8px_rgba(124,92,231,0.06)] flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center text-primary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">redeem</span>
+</div>
+<div>
+<h2 class="font-headline-md text-on-surface">Maya's 30th Birthday</h2>
+<div class="flex flex-wrap items-center gap-2 mt-1 text-on-surface-variant text-body-md">
+<span class="inline-flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">palette</span> Art &amp; Coffee lover</span>
+<span class="text-outline-variant">•</span>
+<span class="inline-flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">payments</span> Budget ₹5,000 - ₹15,000</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full lg:w-auto justify-end border-t lg:border-t-0 pt-4 lg:pt-0 border-outline-variant/30">
+<div class="text-right">
+<div class="text-body-sm text-on-surface-variant">Selected Items</div>
+<div class="font-headline-sm text-primary">4 items (₹24,700)</div>
+</div>
+</div>
+</div>
+<!-- Filters Bar -->
+<div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary text-label-md font-medium shadow-sm">All Categories</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface text-label-md font-medium transition-colors">Art &amp; Craft</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface text-label-md font-medium transition-colors">Coffee &amp; Brews</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface text-label-md font-medium transition-colors">Local Artisans</button>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="relative flex-1 md:w-64">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant/50 text-body-md focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Search recommendations..." type="text"/>
+</div>
+<select class="px-4 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant/50 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary">
+<option>Sort by: Priority</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+</select>
+</div>
+</div>
+<!-- Gift Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg mb-space-xl">
+<!-- Card 1 -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(124,92,231,0.06)] hover:shadow-[0_8px_30px_rgba(124,92,231,0.12)] transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="relative h-56 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A premium ceramic pour-over coffee set in matte white with brass accents, staged on a warm wooden countertop next to freshly roasted coffee beans and a steaming mug, morning sunlight filtering through, artisanal aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFcEbfHTmG2YXF9OeVcvV6KFrMTh3lngZPn4UmGRM3oDTUei3Lf6Jr0FA7LbbMx4JfLCbCpO6AusI_5eyi254c4w9FgsIOz5poXjLFeGSd6awEPSghIK5fjwNSJJJJ5jPJ9DZCuIif7Z52-OmPRERaKakCnTeZoWrgTRNQIXbteMKQepOkOTMa7KUt_LZzPLq0q6TUzR59spHlo0uafoCMoZNVijDm1k9WZGoKXCbndHd3KHigzHX1"/>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-tertiary-container text-on-tertiary-container shadow-sm">
+                High Priority
+              </span>
+</div>
+<div class="absolute top-3 right-3">
+<button class="w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-primary shadow-md hover:bg-surface-container-lowest transition-colors">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+</div>
+<div class="p-space-lg">
+<div class="text-body-sm text-primary font-medium mb-1">Matches their love of art &amp; coffee</div>
+<h3 class="font-headline-sm text-on-surface mb-2">Artisan Ceramic Pour-Over Coffee Set</h3>
+<p class="text-body-md text-on-surface-variant line-clamp-2 mb-4">Handcrafted by local studio Blue Pottery, featuring unique reactive glaze and gold-rimmed dripper.</p>
+<div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container-low text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">storefront</span>
+<span>Blue Studio Artisans, Indiranagar</span>
+</div>
+</div>
+</div>
+<div class="p-space-lg pt-0 flex items-center justify-between mt-auto">
+<div>
+<span class="text-body-sm text-on-surface-variant block">Estimated Price</span>
+<span class="font-headline-sm text-on-surface">₹4,500</span>
+</div>
+<button class="px-4 py-2.5 rounded-xl bg-primary text-on-primary text-label-md font-medium hover:opacity-90 transition-opacity">
+            Selected
+          </button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(124,92,231,0.06)] hover:shadow-[0_8px_30px_rgba(124,92,231,0.12)] transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="relative h-56 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An elegant tabletop water-color painting set with vibrant pans of pigment, professional brushes, and textured cotton paper spread out on an oak desk, creative and inspiring mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnC34RFGiBcp8k9KgpTNsztV_6XAc_3XSKS1Ca_HLl_nkD58Kvkoy4b1omC9XD6FEGPdo33ELb5w1UZRVq6mUmFZIPEUP8ZZq4Z1h9gzCFOwX5N_HzgDBtR9XrvE0f4eYlg_Hy5WqUBn1ocZ2aqcqgvK91LA_j_hHIbhnbMX39wPd9T5r4KfWQsWOO664kC_q2uKGmiuuu6yN6iuD5dMo5PCrcdSddrIh_H6lyx6zW54g7IO_J0SBx"/>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-surface-container-high text-on-surface-variant shadow-sm">
+                Nice to Have
+              </span>
+</div>
+<div class="absolute top-3 right-3">
+<button class="w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-outline hover:text-primary shadow-md transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+</div>
+<div class="p-space-lg">
+<div class="text-body-sm text-primary font-medium mb-1">Matches their love of art</div>
+<h3 class="font-headline-sm text-on-surface mb-2">Professional Botanical Watercolor Kit</h3>
+<p class="text-body-md text-on-surface-variant line-clamp-2 mb-4">Curated set of 24 artist-grade pan paints, sable brushes, and a custom-bound cold-press journal.</p>
+<div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container-low text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">storefront</span>
+<span>Kala Arts &amp; Crafts, Brigade Road</span>
+</div>
+</div>
+</div>
+<div class="p-space-lg pt-0 flex items-center justify-between mt-auto">
+<div>
+<span class="text-body-sm text-on-surface-variant block">Estimated Price</span>
+<span class="font-headline-sm text-on-surface">₹8,200</span>
+</div>
+<button class="px-4 py-2.5 rounded-xl bg-primary text-on-primary text-label-md font-medium hover:opacity-90 transition-opacity">
+            Selected
+          </button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(124,92,231,0.06)] hover:shadow-[0_8px_30px_rgba(124,92,231,0.12)] transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="relative h-56 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A sleek black electric grinder alongside specialty coffee beans in a craft pouch, minimalist modern kitchen setup with soft warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4sA0ZMciYcefvgbJl26nJmmhufW90L0kxBjugOEL4mMwvSQnW6qhNlYL_CoxLKwRrbXJ9gwzRtHjDVXbaCfMCkv87s4SNG8bN4uFrtJtcyw_fMGzsK_Msw76nygcgFRMM-oEEfYu2gi2HdIFcvjfmvX3ih1LrfkV1p1pGVVJwgkKYCqMth8fC4Z_mDBWQAIxhtQSJThy7w2FiZ3Pe5NNfx2ieePuOe5qsiHuw83APtc1pQhkDy13Y"/>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-tertiary-container text-on-tertiary-container shadow-sm">
+                High Priority
+              </span>
+</div>
+<div class="absolute top-3 right-3">
+<button class="w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-primary shadow-md hover:bg-surface-container-lowest transition-colors">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+</div>
+<div class="p-space-lg">
+<div class="text-body-sm text-primary font-medium mb-1">Matches coffee enthusiast profile</div>
+<h3 class="font-headline-sm text-on-surface mb-2">Conical Burr Coffee Grinder</h3>
+<p class="text-body-md text-on-surface-variant line-clamp-2 mb-4">Precision grinding settings from espresso to cold brew, essential for the morning ritual.</p>
+<div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container-low text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">storefront</span>
+<span>Blue Tokai Roasters</span>
+</div>
+</div>
+</div>
+<div class="p-space-lg pt-0 flex items-center justify-between mt-auto">
+<div>
+<span class="text-body-sm text-on-surface-variant block">Estimated Price</span>
+<span class="font-headline-sm text-on-surface">₹12,000</span>
+</div>
+<button class="px-4 py-2.5 rounded-xl bg-primary text-on-primary text-label-md font-medium hover:opacity-90 transition-opacity">
+            Selected
+          </button>
+</div>
+</div>
+</div>
+<!-- Visitor Gift Suggestions Section (Pending Review) -->
+<div class="bg-surface-container-low rounded-2xl p-space-xl mb-space-xl">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-lg">
+<div>
+<div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-label-sm font-medium mb-space-sm">
+<span class="material-symbols-outlined text-[16px]">group</span>
+            Community Suggestions
+          </div>
+<h2 class="font-headline-md text-on-surface">Visitor Gift Suggestions (1 Pending Review)</h2>
+</div>
+<span class="text-body-sm text-on-surface-variant">Friends can suggest items to add to Maya's wishlist</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg shadow-sm">
+<div class="flex items-start md:items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant font-headline-sm shrink-0">
+            RK
+          </div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<h3 class="font-headline-sm text-on-surface">Handmade Terracotta Planter Set</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-label-sm">Suggested by Rahul K.</span>
+</div>
+<p class="text-body-md text-on-surface-variant mb-2">"Maya mentioned she wanted some indoor greens for her studio balcony!"</p>
+<div class="flex items-center gap-4 text-body-sm text-on-surface-variant">
+<span class="font-medium text-on-surface">₹2,400</span>
+<span>•</span>
+<span class="text-primary font-medium">Studio Mitti, Koramangala</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto justify-end border-t md:border-t-0 pt-4 md:pt-0 border-outline-variant/30">
+<button class="px-4 py-2 rounded-xl bg-surface-container text-on-surface hover:bg-outline-variant/20 transition-colors text-label-md font-medium">
+            Decline
+          </button>
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary hover:opacity-90 transition-opacity text-label-md font-medium inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">check</span>
+            Approve &amp; Add
+          </button>
+</div>
+</div>
+</div>
+<!-- Footer Navigation Bar -->
+<div class="flex items-center justify-between pt-space-lg border-t border-outline-variant/30">
+<button class="px-6 py-3 rounded-xl bg-surface-container text-on-surface hover:bg-outline-variant/20 transition-colors text-label-md font-medium inline-flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+        Back
+      </button>
+<div class="flex items-center gap-space-md">
+<button class="px-6 py-3 rounded-xl bg-surface-container text-on-surface hover:bg-outline-variant/20 transition-colors text-label-md font-medium">
+          Save Draft
+        </button>
+<button class="px-6 py-3 rounded-xl bg-primary text-on-primary hover:opacity-90 transition-opacity text-label-md font-medium inline-flex items-center gap-space-sm shadow-sm">
+          Continue to Contributions &amp; Review
+          <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Local Gift Modal (Hidden by default, shown via state) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm hidden" id="localGiftModal">
+<div class="bg-surface-container-lowest rounded-3xl p-space-xl max-w-lg w-full mx-gutter shadow-2xl relative">
+<button class="absolute top-6 right-6 w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" onclick="closeLocalGiftModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<div class="mb-space-lg">
+<h3 class="font-headline-md text-on-surface mb-1">Add a Local Gift</h3>
+<p class="text-body-md text-on-surface-variant">Support independent artisans and neighborhood stores.</p>
+</div>
+<form class="space-y-space-md">
+<div>
+<label class="block text-label-md text-on-surface mb-1">Gift Title</label>
+<input class="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant/50 text-body-md focus:outline-none focus:ring-2 focus:ring-primary" placeholder="e.g. Hand-poured Soy Candle" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div>
+<label class="block text-label-md text-on-surface mb-1">Price (INR)</label>
+<input class="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant/50 text-body-md focus:outline-none focus:ring-2 focus:ring-primary" placeholder="₹ 1,500" type="text"/>
+</div>
+<div>
+<label class="block text-label-md text-on-surface mb-1">Shop / Artisan Name</label>
+<input class="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant/50 text-body-md focus:outline-none focus:ring-2 focus:ring-primary" placeholder="e.g. Cinnamon Store" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-label-md text-on-surface mb-1">Notes / Why Maya will love it</label>
+<textarea class="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant/50 text-body-md focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Add a personal touch or specific instructions..." rows="3"></textarea>
+</div>
+<div>
+<label class="block text-label-md text-on-surface mb-1">Product Photo URL or Upload</label>
+<div class="border-2 border-dashed border-outline-variant/60 rounded-xl p-space-lg text-center cursor-pointer hover:bg-surface-container-low/50 transition-colors">
+<span class="material-symbols-outlined text-[32px] text-primary mb-1">add_photo_alternate</span>
+<p class="text-body-md text-on-surface-variant">Click to upload photo or drag and drop</p>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-md">
+<button class="px-5 py-2.5 rounded-xl bg-surface-container text-on-surface text-label-md font-medium" onclick="closeLocalGiftModal()" type="button">Cancel</button>
+<button class="px-5 py-2.5 rounded-xl bg-primary text-on-primary text-label-md font-medium shadow-sm" onclick="closeLocalGiftModal()" type="button">Add to Curation</button>
+</div>
+</form>
+</div>
+</div>
+<script>
+    function openLocalGiftModal() {
+      document.getElementById('localGiftModal').classList.remove('hidden');
+    }
+    function closeLocalGiftModal() {
+      document.getElementById('localGiftModal').classList.add('hidden');
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl"><div class="max-w-7xl mx-auto px-gutter text-center text-on-surface-variant text-body-sm">© 2024 JustGifting. All rights reserved.</div></footer></body></html>
